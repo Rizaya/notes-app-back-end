@@ -8,13 +8,8 @@
   "main": "./src/server.cjs",
   "type": "commonjs",
   "scripts": {
-    "lint": "eslint ./src",
-    "dev" : "react-scripts start",
-    "start": "serve -s build",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build"
+    "start": "NODE_ENV=production node ./src/server.cjs",
+    "lint": "eslint ./src"
   },
   "keywords": [],
   "author": "",
