@@ -6,7 +6,6 @@
   "type": "commonjs",
   "scripts": {
     "start-prod": "NODE_ENV=production node ./src/server.cjs",
-    "start-dev": "nodemon ./src/server.cjs",
     "lint": "eslint ./src"
   },
   "keywords": [],
