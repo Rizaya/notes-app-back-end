@@ -2,6 +2,9 @@
   "name": "notes-app-back-end",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "16.15.1"
+  },
   "main": "./src/server.cjs",
   "type": "commonjs",
   "scripts": {
