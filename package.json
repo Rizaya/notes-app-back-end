@@ -2,12 +2,16 @@
   "name": "notes-app-back-end",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/server.cjs",
   "type": "commonjs",
   "scripts": {
-    "start-prod": "NODE_ENV=production node ./src/server.cjs",
-    "start-dev": "nodemon ./src/server.cjs",
-    "lint": "eslint ./src"
+    "lint": "eslint ./src",
+    "dev" : "react-scripts start",
+    "start": "serve -s build",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +23,7 @@
   },
   "dependencies": {
     "@hapi/hapi": "^20.2.2",
-    "nanoid": "^3.1.22"
+    "nanoid": "^3.1.22",
+    "serve": "^13.0.2"
   }
 }
